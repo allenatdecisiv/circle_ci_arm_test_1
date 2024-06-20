@@ -12,6 +12,11 @@ jobs:
     steps:
       - run: uname -a
       - run: echo "Hello, Arm!"
+      - run: cat /proc/cpuinfo
+      - run: gcc --version
+      - run: command -v ruby
+      - run: command -v bundler
+      - run: command -v node
 
 workflows:
   build_and_test:

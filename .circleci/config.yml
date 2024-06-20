@@ -32,6 +32,8 @@ jobs:
       - run: nvm --version
       - run: rbenv install 2.7.8
       - run: nvm install --lts=gallium
+      - run: ruby -e "puts RUBY_PLATFORM"
+      - run: node -e "console.log(process.arch)"
 
 workflows:
   build_and_test:

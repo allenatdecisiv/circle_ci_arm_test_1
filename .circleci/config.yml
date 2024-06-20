@@ -23,9 +23,13 @@ jobs:
       - run: command -v ruby
       - run: command -v bundler
       - run: command -v node
-      - run: command -v psql
       - run: rbenv versions
       - run: nvm versions
+      - run: ruby --version
+      - run: gem --version
+      - run: bundler --version
+      - run: node --version
+      - run: nvm --version
 
 workflows:
   build_and_test:

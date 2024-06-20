@@ -24,7 +24,7 @@ jobs:
       - run: command -v bundler
       - run: command -v node
       - run: rbenv versions
-      - run: nvm versions
+      - run: nvm ls
       - run: ruby --version
       - run: gem --version
       - run: bundler --version

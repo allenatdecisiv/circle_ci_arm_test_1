@@ -30,6 +30,8 @@ jobs:
       - run: bundler --version
       - run: node --version
       - run: nvm --version
+      - run: rvm install 2.7.8
+      - run: nvm install --lts=gallium
 
 workflows:
   build_and_test:

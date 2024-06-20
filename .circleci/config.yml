@@ -4,6 +4,7 @@ executors:
   my-executor:
     machine:
       image: ubuntu-2204:current
+    resource_class: arm.medium
 
 jobs:
   my-job:

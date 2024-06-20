@@ -3,8 +3,7 @@ version: 2.1
 executors:
   my-executor:
     machine:
-      image: ubuntu-2204:2023.07.01
-    resource_class: arm.medium
+      image: ubuntu-2204:current
 
 jobs:
   my-job:
